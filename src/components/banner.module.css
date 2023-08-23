@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.banner {
+    display: block;
+    margin: 0;
+    padding: 5px;
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+}
+
+.bannerText {
+    padding-top: 20px ;
+    position: relative;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
