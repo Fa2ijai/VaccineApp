@@ -7,8 +7,10 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <div style={{padding:"20px"}}>
-        <InfoCard/>
+      <div className='flex place-content-around p-10'>
+        <InfoCard hospitalName='Chulalongkorn Hospital' imgRef='/img/chula.jpg'/>
+        <InfoCard hospitalName='Rajavithi Hospital' imgRef='/img/rajavithi.jpg'/>
+        <InfoCard hospitalName='Thammasat University Hospital' imgRef='/img/thammasat.jpg'/>
       </div>
     </main>
   )

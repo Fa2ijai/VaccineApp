@@ -10,8 +10,12 @@
 }
 
 .bannerText {
+    display: flex;
+    flex-direction: column;
     padding-top: 20px ;
     position: relative;
     font-family: 'Lora', serif;
     text-align: center;
+    row-gap: 10px;
+    
 }
