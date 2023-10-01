@@ -19,7 +19,7 @@ export default function Banner() {
                 <h1 className="text-4xl">Get Vaccine for Yourself and Your Family</h1>
                 <div className="text-xl">Let's we check hospitals for you</div>
             </div>
-            <button className="absolute bottom-0 right-0 m-2 z-30 rounded-md bg-sky-600 border border-cyan-600 
+            <button className="absolute bottom-0 right-5 m-2 z-30 rounded-md bg-sky-600 border border-cyan-600 
             hover:border-transparent hover:bg-indigo-600 px-3 py-2 shadow-sm text-white font-semibold" 
             onClick={(e)=>{e.stopPropagation();e.preventDefault(); router.push('/hospital')}}>Observe Hospital</button>
         </div>
