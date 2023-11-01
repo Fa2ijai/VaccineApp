@@ -5,13 +5,13 @@ import { AppDispatch, useAppSelector } from "@/redux/store"
 import { useDispatch } from "react-redux"
 
 export default function BookingList(){
-    const item = useAppSelector((state)=>state.bookSlice.reservationItems)
+    const item = useAppSelector((state)=>state.reduxPersistedReducer.bookSlice.reservationItems)
     const dispatch = useDispatch<AppDispatch>()
     return(
         <div className="flex flex-col justify-center items-center h-[88vh]">
         {   
             (item.length!=0)?
-            item.map((reservationItem)=>(
+            item.map((reservationItem:any)=>(
                 
                 <table className="table-auto border-separate border-spacing-x-8 border-spacing-y-2 bg-sky-100 rounded-md font-semibold py-5"><tbody>
                 <tr><td className="text-2xl pb-5">Your Appointment</td></tr>

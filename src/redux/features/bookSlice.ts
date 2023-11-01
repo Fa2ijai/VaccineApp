@@ -12,13 +12,6 @@ export const bookSlice = createSlice({
         addReservation: (state,action:PayloadAction<BookingItem>)=>{
             const newItem: BookingItem[] = [action.payload]
             state.reservationItems = newItem
-
-            // if(state.reservationItems.filter(obj =>obj.idCard==action.payload.idCard)){
-            //     const newItem: BookingItem[] = [action.payload]
-            //     state.reservationItems = newItem
-            // }
-            // else
-            //     state.reservationItems.push(action.payload)
         },
         deleteReservation: (state,action:PayloadAction<BookingItem>)=>{
             const remainItem: BookingItem[]=[]
